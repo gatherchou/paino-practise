@@ -1,0 +1,181 @@
+.container{
+  max-width: 1150px;
+  max-height: 400px;
+  width: 100%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  text-align: center;
+}
+
+.paino {
+  position: absolute;
+  margin-top: 5%;
+  /* left: 24%; */
+  width: 100%;
+  height: 70%;
+}
+
+.octave{
+  position: relative;
+  float: left;
+  border-top: 1px solid gray;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 190px;
+  overflow: hidden;
+}
+
+.keyDown{
+  width:13.16%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
+  position: relative;
+  float: left;
+  height:150px;
+  text-align: center;
+
+}
+.keyUp{
+  width:10%;
+  background-color: #000;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 45%;
+  height: 300px;
+}
+
+.keyUpC{
+  left:9%;
+}
+.keyUpD{
+  left:22.8%;
+}
+.keyUpF{
+  left:50.5%;
+}
+.keyUpG{
+  left:64.7%;
+}
+.keyUpA{
+  left:79%;
+}
+.keyDownName{
+  position: absolute;
+  bottom:0;
+  text-align:center;
+  left:10%;
+}
+
+#showArea{
+  position: relative;
+  width: 500px;
+  height: 380px;
+  left: 25%;
+}
+#stave{
+  max-width: 60%;
+  width: auto;
+  margin: 0 20% 0;
+}
+#note{
+  width:4.4%;
+  position: absolute;
+  left:58%;
+  -webkit-transition:0.2s;
+}
+
+.keyDisable {
+  background-color: grey;
+}
+
+.centerC {
+  color: red;
+}
+
+.d3UP{top: 7%  }
+.c3UP{top: 9%  }
+.b2UP{top: 11%  }
+.a2UP{top: 13%  }
+.g2UP{top: 15.5%  }
+.f2UP{top: 17.5%  }
+.e2UP{top: 19.5%  }
+.d2UP{top: 21.5%  }
+.c2UP{top: 24%  }
+.b1UP{top: 25.75%  }
+.a1UP{top: 28.5%  }
+.g1UP{top: 30%  }
+.f1UP{top: 32.5%  }
+.e1UP{top: 34%  }
+.d1UP{top: 36.5%  }
+.c1UP{top: 38.5%  }
+.b0UP{top: 41%  }
+.a0UP{top: 42.5%  }
+.g0UP{top: 45%  }
+
+.f1DOWN{top: 49.5%  }
+.e1DOWN{top: 51%  }
+.d1DOWN{top: 53.5%  }
+.c1DOWN{top: 55.5%  }
+.b0DOWN{top: 58%  }
+.a0DOWN{top: 60%  }
+.g0DOWN{top: 62%  }
+.f0DOWN{top: 64%  }
+.e0DOWN{top: 66.5%  }
+.d0DOWN{top: 68.5%  }
+.c0DOWN{top: 70.5%  }
+.B0DOWN{top: 72.5%  }
+.A0DOWN{top: 75%  }
+.G0DOWN{top: 77%  }
+.F0DOWN{top: 79%  }
+.E0DOWN{top: 81%  }
+.D0DOWN{top: 83.5%  }
+.C0DOWN{top: 85.5%  }
+.B1DOWN{top: 87.5%  }
+
+#tips{
+  position: relative;
+  width:200px;
+  height:30px;
+  left: 40%;
+  margin: 2%;
+}
+#right,#wrong{
+  position: absolute;
+  width:15px;
+  top:10px;
+  left:40%;
+}
+.hidden{
+  opacity: 0;
+}
+.easeout{
+  -webkit-animation:easeout 1.5s;
+  -webkit-animation-fill-mode:forwards;
+}
+@-webkit-keyframes easeout{
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+#answer{
+  position: absolute;
+  left:60%;
+  top:9px;
+}
+
+#toolbox{
+  text-align: center;
+  margin: 0 auto;
+}
+button{
+  width: 120px;
+  line-height: 35px;
+  border:1px solid #bfbfbf;
+  border-radius: 5px;
+  color: #646464;
+  background-color: #fff;
+  margin: 10px 5px;
+  display: inline-block;
+}

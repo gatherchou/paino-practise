@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="toolbalr">
+            <button id="changeMode">切换音高区域</button>
+            <button id="changeShow">切换音符显示</button>
+        </div>
+        <div id="tips" class="hidden">
+            <img src="./right.gif" id="right"/>
+            <img src="./wrong.gif" id="wrong"/>
+            <span id="answer">C</span>
+        </div>
+        <div id="showArea">
+            <img id="stave" src="./stave.gif" alt="stave"/>
+            <img id="note" src="./note.gif" alt="note" class="c1UP"/>
+        </div>
+      <div class="paino">
+        <div class="octave">
+              <div class="white">
+                  <div class="keyDown keyDisable"><span class="keyDownName">C1</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">D1</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">E1</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">F1</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">G1</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">A1</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">B1</span></div>
+              </div>
+              <div class="black">
+                  <div class="keyUp keyUpC"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpD"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpF"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpG"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpA"><span class="keyUpName"></span></div>
+              </div>
+          </div>
+          <div class="octave">
+              <div class="white">
+                  <div class="keyDown bass"><span class="keyDownName">C</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">D</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">E</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">F</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">G</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">A</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">B</span></div>
+              </div>
+              <div class="black">
+                  <div class="keyUp keyUpC"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpD"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpF"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpG"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpA"><span class="keyUpName"></span></div>
+              </div>
+          </div>
+          <div class="octave">
+              <div class="white">
+                  <div class="keyDown bass"><span class="keyDownName">c</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">d</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">e</span></div>
+                  <div class="keyDown bass"><span class="keyDownName">f</span></div>
+                  <div class="keyDown"><span class="keyDownName">g</span></div>
+                  <div class="keyDown"><span class="keyDownName">a</span></div>
+                  <div class="keyDown"><span class="keyDownName">b</span></div>
+              </div>
+              <div class="black">
+                  <div class="keyUp keyUpC"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpD"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpF"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpG"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpA"><span class="keyUpName"></span></div>
+              </div>
+          </div>
+          <div class="octave">
+              <div class="white">
+                  <div class="keyDown"><span class="keyDownName centerC">c1</span></div>
+                  <div class="keyDown"><span class="keyDownName">d1</span></div>
+                  <div class="keyDown"><span class="keyDownName">e1</span></div>
+                  <div class="keyDown"><span class="keyDownName">f1</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">g1</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">a1</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">b1</span></div>
+              </div>
+              <div class="black">
+                  <div class="keyUp keyUpC"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpD"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpF"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpG"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpA"><span class="keyUpName"></span></div>
+              </div>
+          </div>
+          <div class="octave">
+              <div class="white">
+                  <div class="keyDown treble"><span class="keyDownName">c2</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">d2</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">e2</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">f2</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">g2</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">a2</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">b2</span></div>
+              </div>
+              <div class="black">
+                  <div class="keyUp keyUpC"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpD"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpF"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpG"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpA"><span class="keyUpName"></span></div>
+              </div>
+          </div>
+          <div class="octave">
+              <div class="white">
+                  <div class="keyDown treble"><span class="keyDownName">c3</span></div>
+                  <div class="keyDown treble"><span class="keyDownName">d3</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">e3</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">f3</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">g3</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">a3</span></div>
+                  <div class="keyDown keyDisable"><span class="keyDownName">b3</span></div>
+              </div>
+              <div class="black">
+                  <div class="keyUp keyUpC"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpD"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpF"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpG"><span class="keyUpName"></span></div>
+                  <div class="keyUp keyUpA"><span class="keyUpName"></span></div>
+              </div>
+          </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
